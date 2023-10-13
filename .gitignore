@@ -2,4 +2,5 @@
 *.pyc
 *.env
 *.json
+venv/
 openCore/news/migrations/
