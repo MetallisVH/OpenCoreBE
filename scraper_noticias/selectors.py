@@ -10,14 +10,40 @@ tags = {
     't13': {
         'container': 'a',
         'attribute': 'class',
-        'value': 'home-category-grilla__article'
+        'value': 'home-category-grilla__article',
     },
+    'meganoticias': {
+        'container': 'article',
+        'attribute': 'class',
+        'value': 'box-generica',
+    },
+    'cnn': {
+        'container': 'div',
+        'attribute': 'class',
+        'value': 'inner-list__item inner-item',
+    },
+    'chvn': {
+        'container': 'div',
+        'attribute': 'class',
+        'value': 'category-list__item',
+    },
+    'elmostrador': {
+        'container': 'div',
+        'attribute': 'class',        
+        'value': 'd-tag-card | common:margin-top-25',
+    }
+
 }
 
 #links: diccionario que guarda el link de la pagina principal de cada sitio web
 links = {
     'latercera': ['https://www.latercera.com/canal/politica/'],
     't13': ['https://www.t13.cl/politica'],
+    'meganoticias':['https://www.meganoticias.cl/temas/politica/'],
+    'cnn':['https://www.cnnchile.com/tag/politica/'],
+    'chvn': ['https://www.chvnoticias.cl/tag/politica/'],
+    'elmostrador': ['https://www.elmostrador.cl/categoria/politica/'],
+
 }
 
 
@@ -33,13 +59,33 @@ title_selector = {
         'container': 'h1',
         'attribute': 'class',
         'value': 'article-component__header-title',
-    }
+    },
+    'meganoticias':['h1'],
+    'cnn':{
+        'container': 'h1',
+        'attribute': 'class',
+        'value': 'main-single-header__title',
+    },
+    'chvn':{
+        'container': 'h1',
+        'attribute': 'class',
+        'value': 'the-single__title',
+    },
+    'elmostrador':{
+        'container': 'h1',
+        'attribute': 'class',
+        'value': 'd-the-single__title | common:margin-bottom-25',        
+    },    
 }
 
 #content_selector: diccionario que guarda el selector de la etiqueta html donde se encuentra el contenido de la noticia
 content_selector = {
     'latercera': ['p'],
-    't13':['p']
+    't13':['p'],
+    'meganoticias':['p'],
+    'cnn':['p'],
+    'chvn':['p'],
+    'elmostrador':['p'],
 }
 
 image_selector = {
@@ -52,5 +98,25 @@ image_selector = {
         'container': 'div',
         'attribute': 'class',
         'value': 'article-component__header-image-wrapper',
-    }
+    },
+    'meganoticias': {
+        'container': 'figure',
+        'attribute': 'class',
+        'value': 'creditosImgBody',
+    },
+    'cnn': {
+        'container': 'div',
+        'attribute': 'class',
+        'value': 'js-content-img',
+    },
+    'chvn': {
+        'container': 'div',
+        'attribute': 'class',
+        'value': 'js-content-img',
+    },
+    'elmostrador':{
+        'container': 'div',
+        'attribute': 'class',
+        'value': 'alignnone wp-image-2953495 size-full',        
+    },    
 }
